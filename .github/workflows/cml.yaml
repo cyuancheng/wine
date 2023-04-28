@@ -19,10 +19,12 @@ jobs:
           
           echo "##data viz" >> report.md
           cat metrics.txt >> report.md
-          echo "![](./feature_importance.png)" >> report.md
-          echo "![](./residuals.png )" >> report.md
+          #echo "![](./feature_importance.png)" >> report.md
+          #echo "![](./residuals.png )" >> report.md
           cml comment create report.md
           
+          
+
 #       - name: Write CML report
 #         env:
 #           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
