@@ -17,10 +17,10 @@ jobs:
           echo "##model matrics" > report.md 
           cat metrics.txt >> report.md
           
-          echo "##data viz" >> report.md
-          echo "![](./feature_importance.png)" >> report.md
-          echo "![](./residuals.png )" >> report.md
-          cml comment create report.md
+        #  echo "##data viz" >> report.md
+        #  echo "![](./feature_importance.png)" >> report.md
+        #  echo "![](./residuals.png )" >> report.md
+        #  cml comment create report.md
           
           
 
