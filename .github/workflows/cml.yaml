@@ -13,10 +13,8 @@ jobs:
         run: |
           pip install -r requirements.txt
           python train.py
-          
           echo "##model matrics" > report.md 
           cat metrics.txt >> report.md
-          
         #  echo "##data viz" >> report.md
         #  echo "![](./feature_importance.png)" >> report.md
         #  echo "![](./residuals.png )" >> report.md
