@@ -18,9 +18,10 @@ jobs:
           cat metrics.txt >> report.md
           
           echo "##data viz" >> report.md
-          cml-publish feature_importance.png --md >> report.md
-          cml-publish residuals.png 
-          cml-send-comment report.md
+          cat metrics.txt >> report.md
+          echo "![](./feature_importance.png)" >> report.md
+          echo "![](./residuals.png )" >> report.md
+          cml comment create report.md
           
 #       - name: Write CML report
 #         env:
